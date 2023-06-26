@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Overpass:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --rojo: hsl(0, 100%, 74%);
+    --verde: hsl(154, 59%, 51%);
+    --azul: hsl(248, 32%, 49%);
+    --azul-oscuro: hsl(249, 10%, 26%);
+    --azul-clarito: hsl(246, 25%, 77%);
+}
+
+body {
+    background-image: url(./images/bg-intro-desktop.png), linear-gradient(0deg, rgba(243, 58, 58, 0.804) 0%, rgba(253,45,45,0.8015581232492998) 100%);
+}
+
+.contenedor-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 75px;
+}
+
+.contenedor-izquierda {
+    color: white ;
+    width: 50%;
+    padding: 75px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor-izquierda h1{
+    font-size: 3rem;
+    line-height: 3.6rem;
+}
+
+.contenedor-derecha{
+    height: 60%;
+    max-width: 600px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prueba-gratis {
+    background-color: var(--azul);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+    box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+}
+
+.contenedor-form {
+    background-color: white;
+    padding: 40px;
+    height: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+    box-shadow: 0px 8px 0px 0px rgba(107,107,107,0.22);
+}
+
+.formulario {
+    height: 100%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formulario form ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario form ul li{
+    height: 20%;
+    width: 100%;
+}
+
+.formulario form ul li input {
+    height: 60%;
+    width: 100%;
+    padding-left: 30px ;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.formulario form ul li button {
+    height: 60%;
+    width: 100%;
+    background-color: var(--verde);
+    border: 0;
+    color: rgb(242, 237, 237);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+form p{
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--azul-clarito);
+}
+
+form p strong{
+    color: var(--rojo);
+}
+
+.contenedor-input {
+    position: relative;
+}
+
+#icon-error-nombre {
+    position: absolute;
+    display: none;
+    bottom: 2.4rem;
+    right: 1rem;
+    color: var(--rojo);
+}
+
+#icon-error-apellido {
+    position: absolute;
+    display: none;
+    bottom: 2.4rem;
+    right: 1rem;
+    color: var(--rojo);
+}
+
+#icon-error-email {
+    position: absolute;
+    display: none;
+    bottom: 2.4rem;
+    right: 1rem;
+    color: var(--rojo);
+}
+
+#icon-error-password {
+    position: absolute;
+    display: none;
+    bottom: 2.4rem;
+    right: 1rem;
+    color: var(--rojo);
+}
+
+.input {
+    border: solid 1px rgb(209, 209, 209);
+    
+}
+
+.error {
+    border: solid 2px var(--rojo);
+}
+
+.mensaje-error {
+    font-size: 12px;
+    text-align: end;
+    color: var(--rojo);
+    padding-top: 3px;
+}

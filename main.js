@@ -32,10 +32,13 @@ function mostrarMensajesError() {
   var mensajeErrorEmail = null;
   var mensajeErrorPassword = null;
 
+  var hayErrores = false;
+
   for (var i = 0; i < inputs.length; i++) {
     var input = inputs[i];
     var valor = input.value.trim();
     if (valor === "") {
+      hayErrores = true;
       switch(input.id) {
         case "nombre":
           mensajeErrorNombre = document.getElementById("mensajeErrorNombre");
@@ -59,6 +62,10 @@ function mostrarMensajesError() {
           break;
       }
     }
+  }
+
+  if(!hayErrores) {
+    document.getElementById("miFormulario").submit();
   }
 
 }

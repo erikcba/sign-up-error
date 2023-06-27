@@ -111,12 +111,18 @@ body {
     height: 60%;
     width: 100%;
     background-color: var(--verde);
-    border: 0;
+    border: 4px solid transparent;
     color: rgb(242, 237, 237);
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.formulario form ul li button:hover {
+    cursor: pointer;
+    background-color:hsl(154, 73%, 54%) ;
+    border-bottom:4px solid var(--verde) ;
 }
 
 form p{
@@ -179,4 +185,39 @@ form p strong{
     text-align: end;
     color: var(--rojo);
     padding-top: 3px;
+}
+
+@media (max-width: 1110px) {
+    .contenedor-principal {
+        flex-direction: column;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .contenedor-izquierda {
+        padding: 30px 0;
+    }
+
+    .contenedor-derecha {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .contenedor-izquierda {
+        width: 85%;
+    }
+
+    .prueba-gratis {
+        font-size: 0.9rem;
+    }
+
+    .contenedor-derecha{
+        width: 85%;
+    }
+
+    .formulario form ul li button {
+        font-size: 14px;
+    }
+
 }

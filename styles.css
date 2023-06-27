@@ -220,4 +220,8 @@ form p strong{
         font-size: 14px;
     }
 
+    .contenedor-form {
+        height: 80%;
+    }
+
 }
